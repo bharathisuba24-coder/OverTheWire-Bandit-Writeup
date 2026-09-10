@@ -18,6 +18,8 @@ What I learned
 ssh is used to connect to a remote computer.
 ls displays files and directories.
 cat displays the contents of a file.
+<img width="1465" height="756" alt="Screenshot 2026-09-10 224956" src="https://github.com/user-attachments/assets/352e6725-6c81-4203-a12b-d6f9b332cb01" />
+
 Level 1 → Level 2
 Objective
 The password was stored in a file whose name was -.
@@ -28,6 +30,8 @@ cat ./-
 What I learned
 Linux treats - specially because it can represent standard input.
 Using ./- tells Linux that - is the filename in the current directory.
+
+
 Level 2 → Level 3
 Objective
 The password was stored in a file containing spaces in its filename.
@@ -199,6 +203,8 @@ cat /etc/bandit_pass/bandit14
 What I learned
 SSH can authenticate users using private keys instead of passwords.
 I also learned that private keys are sensitive information and should never be uploaded publicly.
+<img width="1600" height="826" alt="WhatsApp Image 2026-09-10 at 10 45 12 PM" src="https://github.com/user-attachments/assets/2ac17a62-9cff-446c-b321-4692d34748f9" />
+
 Level 14 → Level 15
 Objective
 The password had to be sent to a service running on port 30000.
@@ -210,6 +216,8 @@ Then I entered the current Bandit password.
 What I learned
 nc stands for Netcat.
 It can be used to create network connections and communicate with services running on specific ports.
+<img width="1600" height="838" alt="WhatsApp Image 2026-09-10 at 10 45 12 PM (1)" src="https://github.com/user-attachments/assets/fb8b0abe-34b8-47cc-9d9f-3a288cb2cccb" />
+
 Level 15 → Level 16
 Objective
 This level required connecting to a service using SSL/TLS on port 30001.
@@ -217,6 +225,9 @@ Command
 ```bash
 openssl s_client -connect localhost:30001
 ```
+
+<img width="1600" height="840" alt="WhatsApp Image 2026-09-10 at 10 45 13 PM" src="https://github.com/user-attachments/assets/2940e00a-10b1-48de-a608-0ba9f1063b4d" />
+
 After the connection was established, I entered the current Bandit password.
 What I learned
 I learned that openssl s_client can be used to create an SSL/TLS connection to a server.
